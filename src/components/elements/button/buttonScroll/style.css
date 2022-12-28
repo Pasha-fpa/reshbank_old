@@ -1,0 +1,135 @@
+.button-scroll {
+	display: inline-block;
+	position: relative;
+	background: #21ba72;
+	box-shadow: rgb(33 186 114 / 31%) 0px 7px 16px;
+	border-radius: 30px;
+	transition: background-color .2s linear,color .2s linear,box-shadow .2s linear;
+	overflow: hidden;
+	padding: 1px 6px;
+	cursor: pointer;
+	
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+}
+.button-scroll:hover {
+	background-color: #86cf13;
+}
+.button-scroll::before {
+	width: 140px;
+	height: 112px;
+	background-position: center;
+	z-index: 1;
+	position: absolute;
+	content: '';
+}
+.button-scroll::after {
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-color: #fff;
+	width: 500px;
+	height: 500px;
+	opacity: 0.2;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	margin: -250px 0px 0px -250px;
+	-webkit-animation: button 3s infinite linear;
+	-moz-animation: button 3s infinite linear;
+	-o-animation: button 3s infinite linear;
+	animation: button 3s infinite linear;
+}
+.button-scroll__span {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding: 16px 40px 19px 40px;
+
+	align-items: center;
+	white-space: nowrap;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+.small > .button-scroll__span {
+	padding: 8px 20px 8px 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.small.button-scroll {
+	box-shadow: none;
+}
+
+@-webkit-keyframes button {0% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } 50% { -moz-transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); transform: scale(1); } 100% { -moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } }
+@-moz-keyframes button {0% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } 50% {-moz-transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); transform: scale(1); } 100% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } }
+@-o-keyframes button {0% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } 50% {-moz-transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); transform: scale(1); } 100% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } }
+@keyframes button {0% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } 50% {-moz-transform: scale(1);    -ms-transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); transform: scale(1); } 100% {-moz-transform: scale(0); -ms-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); transform: scale(0); } }
+
+@media (max-width: 768px) {
+	.button-scroll {
+		display: block;
+		width: 210px;
+		margin: 20px auto 0;
+	}
+	.banner-adv .button-scroll {
+		/* display: inline-block; */
+		/* width: auto; */
+		margin: 0;
+	}
+	.button-scroll__span {
+		font-size: 16px;
+	}
+	.small.button-scroll {
+		width: auto;
+		margin: 0;
+	}
+	.small > .button-scroll__span {
+		font-size: 14px;
+	}
+	/* .small.button-scroll {
+		box-shadow: none;
+	} */
+}
+
+@media (max-width: 621px) {
+	.tabs-nav .button-scroll.small {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	.banner-adv .button-scroll {
+		/* display: block; */
+		/* width: 200px; */
+		height: 44px;
+		/* margin: 0 auto; */
+	}
+	.banner-adv .button-scroll .button-scroll__span {
+		padding: 9px 0;	
+	}
+}
+
+@media (max-width: 600px) {
+	.banner-adv .button-scroll {
+		display: block;
+		width: 200px;
+		height: 44px;
+		margin: 0 auto;
+	}
+	.banner-adv .button-scroll .button-scroll__span {
+		padding: 9px 0;	
+	}
+}
+
+@media (max-width: 488px) {
+	.banner-adv .button-scroll {
+		margin: 0 auto;
+	}
+}

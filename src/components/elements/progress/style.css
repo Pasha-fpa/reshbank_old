@@ -1,0 +1,34 @@
+.form-progress {
+	margin: 5px 0 0;
+}
+.form-progress__value {
+	font-size: 20px;
+	margin: 5px 0;
+}
+.form-progress-line {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #cfcfcf;
+}
+.form-progress-line__current {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: rgb(48, 208, 48);
+	border-radius: 10px;
+	z-index: 3;
+}
+.form-progress-line__next {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+	background-color: #90df90;
+	border-radius: 10px;
+	z-index: 2;
+}

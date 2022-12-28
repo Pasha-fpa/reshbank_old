@@ -1,0 +1,120 @@
+.payment {
+	display: flex;
+	width: 664px;
+	height: 184px;
+	margin: 16px 0 0;
+}
+
+.payment-calculation {
+	margin: 12px 0 0 50px;
+}
+.payment-calculation__list {
+	position: relative;
+	background: #fff;
+	border-radius: 8px;
+	padding: 10px;
+	z-index: 10;
+
+	font-size: 14px;
+	color: #333;
+	line-height: 32px;
+}
+.payment-calculation__list::before {
+	content: "";
+	position: absolute;
+	left: -17px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 18px solid #fff;
+}
+.payment-calculation__item {
+	display: flex;
+}
+.payment-calculation__name {
+	font-weight: bold;
+	margin: 0 5px 0 0;
+}
+.payment-calculation__num {}
+
+@media (max-width: 768px) {
+	.payment {
+		position: relative;
+		display: block;
+		background-color: #fff;
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		padding: 20px;
+		margin: 156px auto 0;
+		z-index: 1;
+	}
+	.payment__range-list {
+		width: 100%;
+	}
+	.payment-calculation {
+		margin: 32px 0 0;
+		padding: 10px;
+	}
+	.payment-calculation__list {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+	}
+	.payment-calculation__list::before {
+		display: none;
+	}
+	.payment-calculation__item {
+		display: block !important;
+	}
+	.payment-calculation__name {
+		text-align: center;
+		line-height: 16.8px;
+		margin: 0;
+	}
+	.payment-calculation__num {
+		text-align: center;
+		line-height: 17px;
+	}
+}
+
+@media (max-width: 441px) {
+	.payment {
+		padding: 20px;
+	}
+	.payment-calculation {
+		padding: 0;
+	}
+	.payment-calculation__list {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+	}
+	.payment-calculation__item {
+		margin: 0 5px;
+	}
+	.payment-calculation__name {
+		font-size: 12px;
+	}
+	.payment-calculation__num {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 371px) {
+	.payment-calculation__list {
+		margin: 0 -8px;
+	}
+	.payment-calculation__num {
+		font-size: 12px !important;
+	}
+}
+
+@media (max-width: 334px) {
+	.payment-calculation__num {
+    font-size: 13px;
+	}
+}

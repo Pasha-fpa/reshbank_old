@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Glober';		
+	src: url('./../assets/fonts/GloberRegular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Glober';		
+	src: url('./../assets/fonts/GloberBold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+	
+.container {
+	max-width: 1520px !important;
+	margin: 0 auto;
+}
+@media (max-width:768px) {
+	.container{
+		padding: 0 8px;
+	}
+}
+
+.root {
+	overflow: hidden;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+.row.jc-sb {
+	justify-content: space-between;
+}
+.row.ai-s {
+	align-items: flex-start;
+}
+.row.ai-n {
+	align-items: normal;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.anim-opacity {
+	animation: anim-opacity 1s; 
+}
+
+@keyframes anim-opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

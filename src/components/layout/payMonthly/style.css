@@ -1,0 +1,202 @@
+.pay-monthly {
+	margin: 86px 0 0;
+}
+.pay-monthly__content {
+	width: 1320px;
+	max-width: 100%;
+	border-radius: 16px;
+	box-shadow: 0 2px 24px 0 rgb(0 0 0 / 5%);
+	margin: 0 auto;
+}
+.pay-monthly__content.row {
+	align-items: stretch;
+}
+.pay-monthly__left {
+	flex: 0 0 424px;
+	width: 424px;
+	padding: 36px 40px;
+	border-right: 2px dashed #cfcfcf;
+	box-shadow: -40px 0 20px -20px rgb(0 0 0 / 10%) inset;
+}
+.pay-monthly__title {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 700;
+	color: #111;
+}
+.pay-monthly-right {
+	flex: 1 1 auto;
+	padding: 40px 0 0 40px;
+	background: url(./../../../assets/imgs/css/bg3.jpg) center / cover;
+}
+.pay-monthly-right.row {
+	justify-content: flex-end;
+}
+.pay-monthly-right__info {
+	padding: 32px 24px;
+	background: #fff;
+	border-radius: 16px;
+	width: 304px;
+	height: 100%;
+	height: 334px;
+	text-align: center;
+	color: #f5f5f7;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 0 40px 0;
+}
+.pay-monthly-right__title {
+	text-align: center;
+	font-size: 18px;
+	line-height: 1;
+	color: #222;
+}
+.pay-monthly-right__sum {
+	margin: 8px 0 0;
+
+	color: #ea2119;
+	font-size: 38px;
+	line-height: 1;
+	font-weight: 700;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pay-monthly-right__unit {	
+	font-size: 14px;
+	line-height: 22px;
+	color: #ea2119;
+	text-align: center;
+}
+.pay-monthly-right__img {
+	height: 80px;
+	width: 97px;
+	margin: 20px auto 0;
+}
+.pay-monthly-right__img img {
+	width: 100%;
+	height: 100%;
+}
+.pay-monthly-right__text {
+	text-align: center;
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 1.3;
+	margin: 20px 0 0;
+}
+.pay-monthly__img {
+	width: 460px;
+	height: auto;
+}
+.pay-monthly__img img {
+	width: 100%;
+	height: 100%;
+	border-bottom-right-radius: 16px;
+	margin: 0 0 -7px 0;
+}
+
+.pay-monthly__line {
+	height: 24px;
+	width: 100%;
+}
+
+@media (max-width: 1320px) {
+	.pay-monthly__right {
+		position: relative;
+	}
+	.pay-monthly-right__info {
+		position: relative;
+		z-index: 1;
+	}
+	.pay-monthly__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 1150px) {
+	.pay-monthly__img {
+		width: 360px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.pay-monthly__img {
+		display: none;
+	}
+	.pay-monthly__right {
+		padding: 40px;
+	}
+	.pay-monthly-right__info {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 999px) {
+	.pay-monthly__left {
+    flex: 0 1 424px;
+	}
+	.pay-monthly__right {
+		padding: 24px;
+	}
+}
+
+@media (max-width: 767px) {
+	.pay-monthly {
+		margin: 44px 0 0;
+	}
+	.range-default__slider {
+		width: calc(100% - 22px);
+	}
+	.pay-monthly__content {
+		display: block !important;
+	}
+	.pay-monthly__content,
+	.pay-monthly__left {
+		border: none;
+		background-color: #fff;
+		box-shadow: none;
+		width: 100%;
+	}
+	.pay-monthly__right {
+		height: 300px;
+		flex-direction: column;
+	}
+	.pay-monthly-right__sum {
+		font-size: 24px;
+	}
+	.pay-monthly-right__unit {
+		font-size: 12px;
+	}
+	.pay-monthly-right__info {
+		position: relative;
+		height: auto;
+		padding: 16px;
+		margin: 0 0 40px;
+	}
+	.pay-monthly-right__img {
+		position: absolute;
+		top: 150px;
+		left: 50%;
+		width: 120px;
+		height: auto;
+		transform: translate(-50%, 0);
+	}
+	.pay-monthly-right__text {
+		margin: 10px 0 0;
+	}
+}
+
+@media (max-width: 599px) {
+	.pay-monthly {
+		padding: 0 0 32px;
+		margin: 32px 0 0;
+	}
+	.pay-monthly__left {
+		padding: 0 10px 32px;
+	}
+	.pay-monthly__title {
+		font-size: 24px;
+		margin: 0 0 -10px;
+	}
+}

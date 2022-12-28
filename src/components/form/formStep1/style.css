@@ -1,0 +1,76 @@
+.checkbox {
+	margin: 16px 0 0;
+}
+
+.checkbox__error {
+	color: #ef4444d8;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.checkbox__wrap {
+	padding: 4px;
+	margin: 10px 0 0;
+}
+
+.checkbox__control {}
+
+.checkbox__label {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox__input {
+	flex: 0 0 24px;
+	width: 24px;
+	height: 24px; 
+	border: 1px solid rgb(17, 17, 17);
+	border-radius: 8px;
+	margin: 0 12px 0 0;
+	cursor: pointer;
+}
+
+.checkbox__input.active {
+	background-color: red;
+	background-image:
+		linear-gradient(-45deg, transparent 65%, hsl(215 28% 17%) 65.99%),
+		linear-gradient(45deg, transparent 75%, hsl(215 28% 17%) 75.99%),
+		linear-gradient(-45deg, hsl(215 28% 17%) 40%, transparent 40.99%),
+		linear-gradient(45deg, hsl(215 28% 17%) 30%, hsl(0 0% 100%) 30.99%, hsl(0 0% 100%) 40%, transparent 40.99%),
+		linear-gradient(-45deg, hsl(0 0% 100%) 50%, hsl(215 28% 17%) 50.99%);
+
+	/* background-position-y: 5px; */
+	/* animation: checkmark var(.2s, .2s) ease-in-out; */
+	
+	animation: .2s ease-in-out running checkmark;
+}
+
+.checkbox__text {
+	line-height: 14px;
+	font-size: 14px;
+	padding: 4px 0 0;
+	cursor: pointer;
+}
+
+@keyframes checkmark {
+	0% {
+		background-position-y: 5px;
+	}
+
+	50% {
+		background-position-y: -2px;
+	}
+
+	100% {
+		background-position-y: 0;
+	}
+}
+
+@media (max-width: 768.98px) {
+	.checkbox__error {
+		text-align: left;
+	}
+	.checkbox__text {
+		text-align: left;
+	}
+}

@@ -1,0 +1,134 @@
+.banner-thanks {}
+.banner-thanks__content {
+	position: relative;
+	background: url(./../../../../assets/imgs/css/bg3.jpg) center / cover;
+	height: 514px;
+	padding: 80px 166px 0;
+	border-radius: 20px;
+
+	max-width: 100%;
+	position: relative;
+
+}
+.banner-thanks-info {
+	flex: 1 0 55%;
+	margin: 0 0 80px 0;
+}
+.banner-thanks-info__title {
+	color: #333;
+	font-size: 52px;
+	line-height: 61px;
+	font-weight: 700;
+	font-family: 'Glober';
+}
+.banner-thanks-info__text {
+	display: block;
+	color: #333;
+	margin-top: 10px;
+	line-height: 1.2;
+	font-size: 24px;
+	margin: 10px 0 0;
+}
+.banner-thanks__img {
+	flex: 0 0 45%;
+	max-width: 45%;
+	margin: 8px 0 0;
+}
+.banner-thanks img {
+	display: block;
+	width: auto;
+	height: 450px;
+	margin: 0 0 0 auto;
+}
+
+@media (max-width: 1450px) {
+	.banner-thanks__content {
+		padding: 80px 66px 0;
+	}
+}
+
+@media (max-width: 1400px) {
+	.banner-thanks__content {
+		height: 500px;
+	}
+	.banner-thanks__img {
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+	.banner-thanks img {
+		height: 420px;
+	}
+}
+@media (max-width: 1248px) {
+	.banner-thanks__img {
+		flex: 0 1 30%;
+		max-width: auto;
+	}
+	.banner-thanks img {
+		height: 430px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.banner-thanks-info__title {
+		font-size: 46px;
+		line-height: 1.2;
+	}
+}
+
+@media (max-width: 1023px) {
+	.banner-thanks-info__title {
+		font-size: 38px;
+		line-height: 1.2;
+	}
+	.banner-thanks-info__text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.banner-thanks-info__text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner-thanks__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center !important;
+		padding: 52px 24px 0;
+		height: auto;
+	}
+	.banner-thanks-info {
+		margin: 0 0 40px 0;
+	}
+	.banner-thanks-info__title {
+		text-align: center;
+		font-size: 36px;
+	}
+	.banner-thanks-info__text {
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.banner-thanks {
+		height: 100%;
+	}
+	.banner-thanks img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 540px) {
+	.banner-thanks-info__title {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.banner-thanks-info__title {
+		font-size: 24px;
+	}
+}
